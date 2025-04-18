@@ -45,7 +45,6 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "perlnavigator",
-                "pyright",
                 "yamlls",
                 "bashls",
                 "ansiblels",
@@ -58,8 +57,6 @@ return {
         mason_tool_installer.setup({
             ensure_installed = {
                 "yamllint",
-                "ruff",
-                "mypy",
                 "ansible-lint",
             }
         })
