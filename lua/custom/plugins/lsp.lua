@@ -35,7 +35,6 @@ return {
           "jsonls",
           "yamlls",
           "ansiblels",
-          -- "bicep",
         },
       })
 
