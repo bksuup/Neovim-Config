@@ -4,6 +4,7 @@ local setup = function()
     formatters_by_ft = {
       -- lua = { "stylua" },
       yaml = { "yamlls" },
+      go = { "gofmt" },
       markdown = { "markdownlint" },
     },
   })
