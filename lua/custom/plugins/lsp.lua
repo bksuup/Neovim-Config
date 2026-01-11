@@ -35,6 +35,7 @@ return {
           "jsonls",
           "yamlls",
           "ansiblels",
+          "terraformls",
         },
       })
 
@@ -49,9 +50,9 @@ return {
       -- Config for LSP-servers
 
       vim.lsp.config("lua_ls", {})
-      -- vim.lsp.enable("lua_ls")
-
       vim.lsp.config("gopls", {})
+      vim.lsp.config("terraformls", {})
+
 
       vim.lsp.config("ansiblels", {})
 
