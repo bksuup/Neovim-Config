@@ -5,7 +5,6 @@ local setup = function()
       -- lua = { "stylua" },
       yaml = { "yamlls" },
       go = { "gofmt" },
-      markdown = { "markdownlint" },
     },
   })
 
