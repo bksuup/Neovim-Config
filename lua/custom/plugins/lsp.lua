@@ -32,6 +32,7 @@ return {
         ensure_installed = {
           "lua_ls",
           "gopls",
+          "cue",
           "jsonls",
           "yamlls",
           "terraformls",
@@ -50,8 +51,8 @@ return {
 
       vim.lsp.config("lua_ls", {})
       vim.lsp.config("gopls", {})
+      vim.lsp.config("cue", {})
       vim.lsp.config("terraformls", {})
-
       vim.lsp.config("jsonls", {
         settings = {
           json = {

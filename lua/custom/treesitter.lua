@@ -11,6 +11,7 @@ M.setup = function()
       "gomod",
       "gowork",
       "gosum",
+      "cue",
       "python",
       "toml",
       "sql",
