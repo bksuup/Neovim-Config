@@ -7,3 +7,4 @@ New and improved NVIM config heavily inspired by [tjdevries nvim config](https:/
 - npm
 - ripgrep
 - git
+- tree-sitter-cli
