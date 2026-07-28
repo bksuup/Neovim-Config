@@ -17,6 +17,8 @@ return {
       "williamboman/mason-lspconfig.nvim",
       "WhoIsSethDaniel/mason-tool-installer.nvim",
 
+      { "j-hui/fidget.nvim", opts = {} },
+
       -- Autoformatting
       "stevearc/conform.nvim",
 
@@ -73,6 +75,8 @@ return {
           },
         },
       })
+
+      vim.lsp.enable({ "lua_ls", "gopls", "cue", "terraformls", "jsonls", "yamlls" })
 
       -- Autoformatting --
       require("custom.autoformat").setup()
