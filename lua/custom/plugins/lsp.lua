@@ -13,8 +13,8 @@ return {
           },
         },
       },
-      "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim",
+      "mason-org/mason.nvim",
+      "mason-org/mason-lspconfig.nvim",
       "WhoIsSethDaniel/mason-tool-installer.nvim",
 
       { "j-hui/fidget.nvim", opts = {} },
@@ -30,7 +30,6 @@ return {
 
       -- LSP's --
       require("mason-lspconfig").setup({
-        automatic_installation = false,
         ensure_installed = {
           "lua_ls",
           "gopls",
@@ -78,8 +77,6 @@ return {
           },
         },
       })
-
-      vim.lsp.enable({ "lua_ls", "gopls", "cue", "terraformls", "jsonls", "yamlls" })
 
       -- Autoformatting --
       require("custom.autoformat").setup()
