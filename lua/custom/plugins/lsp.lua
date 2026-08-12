@@ -71,7 +71,7 @@ return {
           yaml = {
             format = {
               enable = true,
-              singleQuote = true,
+              singleQuote = false,
             },
             schemas = require("schemastore").yaml.schemas(),
           },
