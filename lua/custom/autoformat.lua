@@ -3,7 +3,6 @@ local setup = function()
   conform.setup({
     formatters_by_ft = {
       -- lua = { "stylua" },
-      yaml = { "yamlls" },
       go = { "gofmt" },
     },
   })
@@ -17,13 +16,11 @@ local setup = function()
     callback = function(args)
       require("conform").format({
         bufnr = args.buf,
-        lsp_fallback = true,
+        lsp_format = "fallback",
         quiet = true,
       })
     end,
   })
 end
-
-setup()
 
 return { setup = setup }
