@@ -8,3 +8,5 @@ New and improved NVIM config heavily inspired by [tjdevries nvim config](https:/
 - ripgrep
 - git
 - tree-sitter-cli
+- make and a C compiler (LuaSnip, telescope-fzf-native, tree-sitter parsers)
+- zathura (VimTeX PDF viewer)
