@@ -25,6 +25,7 @@ M.setup = function()
     "git_config",
     "gitcommit",
     "hcl",
+    "terraform",
     "html",
     "markdown",
     "markdown_inline",
@@ -37,7 +38,7 @@ M.setup = function()
   require("nvim-treesitter").install(parsers)
 
   vim.api.nvim_create_autocmd("FileType", {
-    pattern = parsers,
+    pattern = vim.iter(parsers):map(vim.treesitter.language.get_filetypes):flatten():totable(),
     callback = function()
       vim.treesitter.start()
     end,
