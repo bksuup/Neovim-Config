@@ -8,7 +8,8 @@ return {
     config = function()
       require("telescope").setup({
         defaults = {
-          file_ignore_patterns = { "venv", "virt_env", "env", ".idea", ".git/" },
+          -- Lua patterns: anchor to path segments and escape "." so "env" does not hide environment.go
+          file_ignore_patterns = { "^venv/", "/venv/", "virt_env/", "^env/", "/env/", "%.idea/", "%.git/" },
         },
         pickers = {
           find_files = {
