@@ -53,10 +53,6 @@ return {
       vim.lsp.config("lua_ls", {})
       vim.lsp.config("gopls", {})
       vim.lsp.config("cue", {})
-      vim.lsp.config("terraformls", {
-        root_markers = { ".terraform", ".git", "*.tf", "*.tofu" },
-        single_file_support = true,
-      })
       vim.lsp.config("jsonls", {
         settings = {
           json = {
