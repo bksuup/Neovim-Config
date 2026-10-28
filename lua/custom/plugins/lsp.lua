@@ -41,9 +41,6 @@ return {
 
       -- Config for LSP-servers
 
-      vim.lsp.config("lua_ls", {})
-      vim.lsp.config("gopls", {})
-      vim.lsp.config("cue", {})
       vim.lsp.config("jsonls", {
         settings = {
           json = {

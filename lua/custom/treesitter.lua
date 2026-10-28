@@ -1,10 +1,6 @@
 local M = {}
 
 M.setup = function()
-  require("nvim-treesitter").setup({
-    install_dir = vim.fn.stdpath("data") .. "/site",
-  })
-
   local parsers = {
     "bash",
     "vim",
