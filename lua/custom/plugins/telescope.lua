@@ -18,6 +18,7 @@ return {
           },
         },
       })
+      require("telescope").load_extension("fzf")
 
       local telescope = require("telescope.builtin")
 
