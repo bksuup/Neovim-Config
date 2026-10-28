@@ -39,8 +39,9 @@ M.setup = function()
 
   vim.api.nvim_create_autocmd("FileType", {
     pattern = vim.iter(parsers):map(vim.treesitter.language.get_filetypes):flatten():totable(),
+    -- pcall: parsers install async, so the first open of a filetype can precede its parser
     callback = function()
-      vim.treesitter.start()
+      pcall(vim.treesitter.start)
     end,
   })
 end
