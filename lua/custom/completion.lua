@@ -2,9 +2,6 @@ require("custom.snippets")
 
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
-local lspkind = require("lspkind")
-lspkind.init({})
-
 local cmp = require("cmp")
 
 cmp.setup({
@@ -25,6 +22,8 @@ cmp.setup({
       { "i", "c" }
     ),
   },
+
+  formatting = { format = require("lspkind").cmp_format() },
 
   -- Enable luasnip to handle snippet expansion for nvim-cmp
   snippet = {
