@@ -15,7 +15,6 @@ return {
       },
       "mason-org/mason.nvim",
       "mason-org/mason-lspconfig.nvim",
-      "WhoIsSethDaniel/mason-tool-installer.nvim",
 
       { "j-hui/fidget.nvim", opts = {} },
 
@@ -37,14 +36,6 @@ return {
           "jsonls",
           "yamlls",
           "terraformls",
-        },
-      })
-
-      -- Tools --
-      require("mason-tool-installer").setup({
-        ensure_installed = {
-          "stylua",
-          "markdownlint",
         },
       })
 
